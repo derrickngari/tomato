@@ -1,0 +1,103 @@
+@media only screen and (max-width: 430px){
+    .navlinks{
+        display: none;
+    }
+    .hero .hero-content p{
+        display: none;
+    }
+    /* .food-list{
+        display: block;
+    } */
+    .logo{
+        width: 70px;
+    }
+    .logo img{
+        width: 70px;
+    }
+    .search-icon img,
+    .cart-icon img{
+    width: 20px;
+    }
+    .hero{
+        min-height: 30vh;
+    }
+    .hero-content h2{
+        font-size: 17px;
+    }
+    .primary, 
+    .btn{
+        font-size: 15px;
+        padding: 8px 16px;
+    }
+    .menu-list{
+        margin-bottom: -10px;
+    }
+    .menu-list-content h2{
+        font-size: 18px;
+    }
+    .menu-list-content p{
+        font-size: 14px;
+    }
+    .menu-list-item-img{
+        width: 60px
+    }
+    .food-item{
+        width: 70%;
+        align-items: center;
+        margin-left: 40px;
+    }
+    .food-list{
+        align-items: center;
+    }
+    .food-name h4{
+        font-size: 18px;
+    }
+    .food-desc p{
+        font-size: 14px;
+    }
+    .food-price p{
+        font-size: 18px;
+    }
+    .rating{
+        width: 70px;
+    }
+    .add-icon{
+        width: 35px;
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .company .title h2,
+    .contact .title h2{
+        padding-top: 10px;
+    font-size: 18px;
+    }
+    .footer-logo{
+        width: 70%;
+    }
+    .footer-logo p{
+        text-align: start;
+    }
+    .footer-logo img{
+        width: 80px;
+    }
+    .social-icons img{
+        width: 40px;
+    }
+    .company ul li,
+    .contact ul li{
+        padding: 4px 0;
+    }
+    .company ul li a,
+    .contact ul li a{
+        font-size: 15px;
+    }
+    .mobile-app{
+        min-height: 50vh;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}

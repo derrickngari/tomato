@@ -1,0 +1,359 @@
+
+/* nav start */
+nav{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+.logo img{
+    width: 150px;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    color: rgb(90, 88, 88);
+    font-size: 19px;
+    font-family: "Outfit", sans-serif;
+}
+.nav-icons ul li a{
+    font-size: 19px;
+    transition: .3s;
+}
+.navlinks ul li a:hover{
+    border-bottom: 2px solid tomato;
+}
+.nav-icons{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.nav-icons img{
+    width: 30px;
+}
+.search-icon img,
+.cart-icon img{
+    width: 20px;
+    cursor: pointer;
+}
+.btn{
+    background: tomato;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover{
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 7px 10px rgba(0, 0, 0, 0.1);
+}
+/* nav end */
+
+/* hero start */
+.hero{
+    /* width: 100%; */
+    min-height: 60vh;
+    margin: 30px auto;
+    border-radius: 20px;
+    background: url(../Assets/header_img.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero image{
+    width: 100%;
+    height: 100%;
+}
+.hero-content{
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: 1.5vh;
+   max-width: 50%;
+   bottom: 20px;
+   left: 10%;
+   animation: fadeIn 3s;
+}
+.hero-content h2{
+    font-size: 40x;
+    color: #e9e5e5;
+    font-size: 50px;
+}
+.hero-content p{
+    font-size: 16px;
+    color: #e1dcdc;
+}
+.primary{
+    background: #e9e5e5;
+    color: #000;
+    font-weight: 500;
+}
+/* hero end */
+
+/* menu list */
+.menu-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.menu-list-content{
+    display: block;
+}
+.menu-list-content h2{
+    font-size: 35px;
+    font-weight: 600;
+    padding: 30px 0;
+    color: rgb(61, 61, 59);
+}
+.menu-list-content p{
+    width: 70%;
+    font-size: 16px;
+    color: rgb(61, 61, 59);
+    padding: 10px 0;
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 20px;
+    overflow: scroll;
+}
+.menu-list-item{
+    display: block;
+    text-align: center;
+}
+.menu-list-item-img{
+    margin-top: 15px;
+}
+.menu-list-item-img.active{
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    border: 4px solid tomato;
+    align-items: center;
+    padding: 3px;
+}
+.menu-list-item-img img{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    /* margin-top: 15px; */
+
+}
+.list::-webkit-scrollbar{
+    display: none;
+}
+.menu-name{
+    font-size: 16px;
+    color: rgb(90, 88, 88);
+    padding: 12px 0;
+    font-weight: 500;
+}
+hr{
+    width: 90%;
+    border: 1px solid rgb(230, 230, 230);
+    margin-top: 10px;
+    align-items: center;
+}
+
+/* products start */
+.products{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.product-title h2{
+    font-size: 35px;
+    font-weight: 600;
+    padding: 30px 0;
+    color: rgb(61, 61, 59);
+}
+.food-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr ));
+    gap: 30px;
+}
+.food-item{
+    /* width: 250px; */
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 10px #000015;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+    /* box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1); */
+    
+}
+.food-image{
+    position: relative;
+}
+.food-image img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.food-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rating{
+    width: 80px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.rating img{
+    width: 100%;
+    cursor: pointer;
+}
+.food-name h4{
+    font-size: 20px;
+    padding: 10px;
+}
+.food-desc{
+    font-size: 18px;
+    padding: 0 10px;
+    color: rgb(90, 88, 88);
+}
+.food-price p{
+    font-size: 23px;
+    color: tomato;
+    font-weight: 800;
+    padding: 10px 20px;
+}
+.add-icon{
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content:space-between;
+    border-radius: 15px;
+}
+.cta p{
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+}
+.add-icon img,
+.cta img{
+    width: 100%;
+    cursor: pointer;
+}
+.cta{
+   border-radius: 15px; 
+   display: none;
+   background: #fff;
+}
+
+.mobile-app{
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-left: 10%;
+    margin-bottom: 100px;
+}
+.mobile-app .content{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.mobile-app .content img{
+    width: 100%;
+    transition: .3s;
+}
+.mobile-app .content img:hover{
+    transform: scale(1.2);
+}
+.mobile-app-title h2{
+    font-size: 25px;
+    color: rgb(61, 61, 59);
+    font-weight: 600;
+    padding: 30px 0;
+}
+.mobile-app-title span{
+    color: tomato;
+    line-height: 20px;
+}
+footer{
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    background: #323232;
+    padding: 50px 40px;
+}
+footer .footer-content{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 35px; */
+}
+.footer-logo{
+    width: 30%;
+    padding: 10px 20px;
+}
+.footer-logo img{
+    width: 150px;
+}
+.footer-logo p{
+    font-size: 16px;
+    color: rgb(192, 180, 180);
+    padding-top: 15px;
+}
+.social-icons{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+.social-icons img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.company .title h2,
+.contact .title h2{
+    color: #e9e5e5;
+    font-size: 20px;
+    padding: 2 0;
+}
+.company ul li a,
+.contact ul li a{
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(192, 180, 180);
+}
+.company ul li,
+.contact ul li{
+    padding: 8px 0;
+}
+footer hr{
+    margin-left: 35px;
+    margin-top: 30px;
+    height: 1.5px;
+}
+footer p{
+    color: rgb(188, 185, 185);
+    text-align: center;
+    padding-top: 15px;
+}
+
+button.filter-btn{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
